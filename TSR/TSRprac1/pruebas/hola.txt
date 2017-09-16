@@ -1,0 +1,1 @@
+Hola mundo, este es el contenido del nuevo fichero.
