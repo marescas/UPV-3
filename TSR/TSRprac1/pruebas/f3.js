@@ -12,4 +12,4 @@ function getFiles(dir,files_) {
   }
   return files_;
 }
-console.log(getFiles('.'));
+console.log(getFiles('..'));
