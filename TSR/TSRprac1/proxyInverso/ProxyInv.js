@@ -19,7 +19,7 @@ var controlador = net.createServer(function(SocketControlador){
   });
 }).listen(PORT_CONTROLADOR,LOCAL_IP);
 function conectar(i){
-return function(socketCliente){
+  return function(socketCliente){
 
       var SocketServidor =new net.Socket();
 
