@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4dc6b141-a39e-4e3b-a5af-13c5e7c1ef0c" name="UMLUseCaseDiagram2" linkedPackageId="0e31d9fb-2ff5-4001-abac-54264f9a1066" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="89139a33-dc85-4e24-b07a-41abf364262e">
+      <profileInstance Id="7d4b76b4-997d-4005-9c97-fd666a9accd4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f2da1f16-b97c-4afd-8a96-46195a9f0b2a">
+      <profileInstance Id="db2145de-59f2-4487-aeb1-47025af849ab" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="2b8a31b9-d1a4-42e8-a501-f3f54cdb209e" name="Administrador" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c785545f-5e73-4030-984b-7fd664f14c65" />
+        <targetEnds>
+          <association Id="b5299e50-8fa7-445e-8f89-1d3f7eb799fd" isDerived="false" sourceEndRoleName="Administrador" targetEndRoleName="Añadir usuario" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ab806dab-b302-4dce-a7fc-3cbbefb6be54" LastKnownName="Añadir usuario" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d8c1f426-1747-4340-b9fb-779399203a5e" name="Administrador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7b88cdb2-25ff-4b6f-bbf5-b9e7ca4d8d53" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e501a09f-16fb-4b5b-b827-df57640489fc" name="Añadir usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bdb001cc-12df-44f5-b642-a9bf1241fd60" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7870dec3-3636-462a-bd87-bbdfcb1b7019" />
+          </association>
+          <association Id="d54bf5ab-007d-4ab2-a4fd-0e651bf99598" isDerived="false" sourceEndRoleName="Administrador" targetEndRoleName="Añadir curso a impartir" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="59be213f-e995-4c38-a7ae-09c50375f4a9" LastKnownName="Añadir curso a impartir" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e869396e-1294-4c07-acc3-438f868be345" name="Administrador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b444bfcd-ebb3-4504-89df-48c745bb6b60" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3a94a58a-3447-48e6-875f-3b77ecdc8dc8" name="Añadir curso a impartir" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="be6af66c-4cb8-4ab4-a846-1b6191ae7937" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="717ca924-82e8-46fe-8460-999ee0e1e7e7" />
+          </association>
+          <association Id="e2e284ac-6abb-4b1f-9e51-5a9e8a20b4e4" isDerived="false" sourceEndRoleName="Administrador" targetEndRoleName="Asignar profesor a un curso a impartir" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b3dd7a26-8189-4ec0-a751-a009354a5b53" LastKnownName="Asignar profesor a un curso a impartir" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="61e42bc5-ff25-4a78-9abf-fe00b11a5191" name="Administrador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e977f206-f59a-4722-b8ae-ae47e7aa1d4f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="94c22a6e-dc2b-4e7e-988a-2a9f77fb36a5" name="Asignar profesor a un curso a impartir" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e3d724fc-505d-421b-b9c7-87b87d353db3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6142c2fc-a3ba-459d-bcb4-3e5427c9dbc2" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="6db9845a-69e9-4d44-ab31-b167085fc7a1" name="Empleado" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="515fb592-750b-43fb-ab8c-5b50a136e7f4" />
+        <targetEnds>
+          <association Id="3b61022c-84e2-42b0-8010-ed9c480b0d3d" isDerived="false" sourceEndRoleName="Empleado" targetEndRoleName="Listar profesores" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4698c378-c7ba-43f7-8b87-0fb7afc59888" LastKnownName="Listar profesores" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1e2b0c8b-db5a-40d4-98b3-1bb990124261" name="Empleado" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="26c88a18-2b5f-4c3f-a4b8-50e75f702898" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d240ff84-8250-4141-aeeb-ae96473dfc6e" name="Listar profesores" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="398d0fad-d855-4520-8014-bd7d287b0ef5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2d7d1407-4a5d-4f88-81d0-39da978ef34c" />
+          </association>
+          <association Id="588b5afe-db1a-4d45-9707-c6fd01e0637c" isDerived="false" sourceEndRoleName="Empleado" targetEndRoleName="Inscribir un alumno en un curso" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="13f263ef-0e5a-4f23-a598-e3caf43443c0" LastKnownName="Inscribir un alumno en un curso" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9f48792f-59c4-4dc6-8154-3d33a6f14e97" name="Empleado" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2a654ba9-446d-4001-a7c5-372386b01099" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6e4919de-8cb1-4c02-8e57-0e5dc992407e" name="Inscribir un alumno en un curso" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="71893684-61db-48a5-bf1a-5ed4f0985441" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="631f3613-a789-4d72-aa57-336aa549f9c3" />
+          </association>
+          <association Id="0e7d158f-554a-4f2e-985a-a0b0009ec0e7" isDerived="false" sourceEndRoleName="Empleado" targetEndRoleName="Listar faltas de asistencia" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="21322ea1-894b-43b9-90fa-8abd816b7541" LastKnownName="Listar faltas de asistencia" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dc783517-18b9-4eaa-a99d-8a23faccf69d" name="Empleado" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ce1cdc28-43fc-4387-a190-09e1cb58f29a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bdb7216f-9043-47af-9845-cc7d9c5f1377" name="Listar faltas de asistencia" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1e5ec1be-b9e7-4dcf-8f5c-cb685d517e10" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2179588c-a2c5-4ca0-bbc9-bbdd2553a1a4" />
+          </association>
+          <association Id="8a864ea7-589e-4ce8-9198-9d759904c4d0" isDerived="false" sourceEndRoleName="Empleado" targetEndRoleName="Listar cursos" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="37f7e1e3-f5e2-441f-854d-dcd114c78587" LastKnownName="Listar cursos" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7600659a-e118-4a59-9ca4-3cf66d72a5a4" name="Empleado" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4a52a557-651e-4246-9191-5373df6ef3ff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d4ae3c96-b480-413c-b08c-61b06f5a97eb" name="Listar cursos" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="be8e59ec-4cb4-4697-b012-2f9cc00e0215" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7b5d4912-a401-4502-98f0-be427bea861f" />
+          </association>
+          <association Id="663a9e17-8c83-4a8c-8dc0-08a29bcb265f" isDerived="false" sourceEndRoleName="Empleado" targetEndRoleName="Listar usuarios" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="54a4307e-fc8c-498e-a4da-5c63106d2322" LastKnownName="Listar usuarios" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8a0437e5-396c-48fb-899f-e56d8f07ae6f" name="Empleado" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="21630ce3-a908-4f62-85b7-2ee04bcf9be9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="63223602-377d-48c1-bed3-551f276b8680" name="Listar usuarios" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ec113de3-4f60-4423-8094-db3bd068b188" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ff8c2a2e-ee68-4be1-9812-7549e85ae720" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="486e0df3-c1e3-42c6-9e46-6c88d23d4f8b" name="Usuario" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="98b87f71-a344-4c13-b931-c4ef76f4bf14" />
+        <targetEnds>
+          <association Id="130ef382-7c0e-451e-92a7-9fe6d0d5a661" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="Validarse en el sistema" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5a071f7d-33d7-400e-b08d-0686e1ae7694" LastKnownName="Validarse en el sistema" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="362ae5b8-a524-4175-b35c-4d6772fd80c6" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7db65eaa-7550-436e-bff8-84593c9aabbb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="94475c5c-19b5-41b8-a80c-d59a9aa24e0f" name="Validarse en el sistema" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e8bce370-26b2-411e-9308-e0b3646187e1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="766bf614-74f8-4310-902f-b98e851bfba7" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="58824bfc-cdd2-40f1-8db0-2bbb3782f286" name="Empleado" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dd737b38-7394-46b6-b8d6-85f898a579e7" />
+        <generalsInternal>
+          <generalization Id="44e334d0-6e6f-46ce-8470-b90050f84866" isSubstitutable="false">
+            <actorMoniker Id="486e0df3-c1e3-42c6-9e46-6c88d23d4f8b" LastKnownName="Usuario" />
+            <elementDefinition Id="0a5cf992-9da4-4b29-b1bd-30f0cc12d796" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="f9a12bee-8b36-47ff-b7cc-d47904654fcf" name="Profesor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0ac0163a-dccc-46cc-a741-9c2caec28700" />
+        <generalsInternal>
+          <generalization Id="fae49f9a-341d-457b-84b0-1abfc3e05359" isSubstitutable="false">
+            <actorMoniker Id="486e0df3-c1e3-42c6-9e46-6c88d23d4f8b" LastKnownName="Usuario" />
+            <elementDefinition Id="aef0c9ca-43ab-45c6-be5c-421f868c812f" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="2a1995dc-943b-4e60-9b9e-aaa3a9ea4fdf" name="Administrador" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="59234500-adca-4eb5-9ad8-f1d1a58a40aa" />
+        <generalsInternal>
+          <generalization Id="ff45d331-208a-48c1-a8c8-d032c11e9f9e" isSubstitutable="false">
+            <actorMoniker Id="486e0df3-c1e3-42c6-9e46-6c88d23d4f8b" LastKnownName="Usuario" />
+            <elementDefinition Id="16b69a5d-dae1-4627-8952-5b90b34dcd76" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="4dfdb6d8-eed0-4fb8-9312-b10a73748b0e" name="Profesor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3765193c-805f-4d93-b6b0-f4cee419507d" />
+        <targetEnds>
+          <association Id="122d61c6-1e5e-4dd8-bdc8-ecd01760d6e0" isDerived="false" sourceEndRoleName="Profesor" targetEndRoleName="Borrar falta de asistencia" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0c014797-9681-4211-8933-4c79ca11d932" LastKnownName="Borrar falta de asistencia" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0ee3fe5a-b697-48d9-95e3-a5d2c4c2e633" name="Profesor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b690ed89-2774-4b9f-a843-789a5622d73b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a212e9ac-74f0-4569-bf33-f5faafdd65bf" name="Borrar falta de asistencia" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="737afa93-de51-44e2-99f2-3c4ef0766d30" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fbb5b150-f86b-4db5-ab13-7b602438b183" />
+          </association>
+          <association Id="6a32169b-09a5-4896-80c8-a7be223cb8de" isDerived="false" sourceEndRoleName="Profesor" targetEndRoleName="Asignar falta de asistencia" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6b603c77-92de-445f-b3cf-b3c78534f292" LastKnownName="Asignar falta de asistencia" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="774a94a9-8d11-487b-8857-10c06bb68893" name="Profesor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3b387c23-9ecb-4519-9835-05a46f93b4f2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="da3b08dd-7bd1-4d48-b57d-031d7f13ed97" name="Asignar falta de asistencia" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0d9e0281-a856-48b7-97ea-f8d5b56c8f1d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bfc8dad3-9b20-4e57-9d00-20366dc46e76" />
+          </association>
+          <association Id="61ddac39-fb45-411b-8284-80e0b94efed8" isDerived="false" sourceEndRoleName="Profesor" targetEndRoleName="Borrar falta de asistencia" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5b9dab13-ccf9-4755-98ba-b3398e6a6465" LastKnownName="Borrar falta de asistencia" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="18bb9226-e96b-441f-8618-729208b645a1" name="Profesor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ffe3a987-756e-4093-9c18-a55440fae34e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3b214a9a-a2d3-4827-b863-b3ec8cac9e07" name="Borrar falta de asistencia" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a11d86d8-2d95-4bdb-953a-25cd2b79f903" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="778375da-86be-4393-8d7c-02d7fe610dbf" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ab806dab-b302-4dce-a7fc-3cbbefb6be54" name="Añadir usuario" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2f2e9c03-948f-4c19-ba81-1e4904c94395" />
+        <additions>
+          <include Id="41d4118b-e587-468a-89e1-225bef5ea456">
+            <useCaseMoniker Id="64c799dc-bfd4-4b24-b0f8-81e1d491c88c" LastKnownName="Notificar usuario" />
+            <elementDefinition Id="79eccf62-c4a5-4d6a-a11f-11e6b78c4844" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="64c799dc-bfd4-4b24-b0f8-81e1d491c88c" name="Notificar usuario" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="71d0d3cf-6f0c-4bb7-9664-47bd9375abcf" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="59be213f-e995-4c38-a7ae-09c50375f4a9" name="Añadir curso a impartir" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9dd67c1e-1795-4512-91bb-4d5786180921" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b3dd7a26-8189-4ec0-a751-a009354a5b53" name="Asignar profesor a un curso a impartir" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="861042b6-460d-4f71-b859-905be0eaf216" />
+        <additions>
+          <include Id="c68b14ca-aca0-4424-a131-3c13f9e53066">
+            <useCaseMoniker Id="99759326-fc93-4b71-bc23-7c17904891b7" LastKnownName="Buscar profesor" />
+            <elementDefinition Id="cd6cfcd8-a421-40fa-b14c-2b5b38c4a129" />
+          </include>
+          <include Id="b3531124-e69c-4770-8481-f11f29a80092">
+            <useCaseMoniker Id="0920114d-dc73-4276-972d-a0e63520ab25" LastKnownName="Buscar curso" />
+            <elementDefinition Id="cc3444aa-b482-44f2-aaf2-262c5c573a37" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="99759326-fc93-4b71-bc23-7c17904891b7" name="Buscar profesor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c2f45af4-56f2-48ce-aba0-380c2443ac7c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0920114d-dc73-4276-972d-a0e63520ab25" name="Buscar curso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c09e6c12-18e7-409f-8dd2-50a93a3f7afe" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4698c378-c7ba-43f7-8b87-0fb7afc59888" name="Listar profesores" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="452d6e3a-a4da-45bc-8f16-e77366625f11" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="13f263ef-0e5a-4f23-a598-e3caf43443c0" name="Inscribir un alumno en un curso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="60cd6402-89bd-40a2-84c8-f36a6c90eced" />
+        <additions>
+          <include Id="818f0c9f-bd92-4cf9-a554-af244208f5e1">
+            <useCaseMoniker Id="95bbdbf6-7940-487c-a0fc-15dfac95054b" LastKnownName="Buscar alumno" />
+            <elementDefinition Id="5f48cfb4-1a0a-4a08-b6b3-b656b4171f2f" />
+          </include>
+          <include Id="92756fdf-0e0e-4aaf-b684-7e996cbabd17">
+            <useCaseMoniker Id="35871de3-2cac-41c7-9303-bdf22d7c30a3" LastKnownName="Buscar curso" />
+            <elementDefinition Id="836f3135-6067-4540-9c63-62a0956128e2" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="95bbdbf6-7940-487c-a0fc-15dfac95054b" name="Buscar alumno" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="77419481-eabd-459d-8c97-5db986874b89" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="35871de3-2cac-41c7-9303-bdf22d7c30a3" name="Buscar curso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3f2606bf-2aff-40a0-a98c-8da852458f4f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="21322ea1-894b-43b9-90fa-8abd816b7541" name="Listar faltas de asistencia" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3f4b5d0c-bc66-40d9-875e-c43fa490c5f2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="37f7e1e3-f5e2-441f-854d-dcd114c78587" name="Listar cursos" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aa127f3a-02e1-4e11-b858-283f90f1bf1a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="54a4307e-fc8c-498e-a4da-5c63106d2322" name="Listar usuarios" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="570c808b-9ff7-44dd-9426-36d1c45fe47f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e87cb1a6-0409-4a71-90c5-7b64688b8595" name="Listar usuarios por fecha de inscripción" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="11b4e68d-fa2a-407d-a03c-20887bdd480b" />
+        <generalsInternal>
+          <generalization Id="a50c9ae0-a158-412d-b207-04a0b977bcce" isSubstitutable="false">
+            <useCaseMoniker Id="54a4307e-fc8c-498e-a4da-5c63106d2322" LastKnownName="Listar usuarios" />
+            <elementDefinition Id="68f91cdd-b12a-4ff7-ac1c-337c994fc2d3" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d72b7b54-2d7e-4e32-9a44-8966b745ba5a" name="Listar usuarios por curso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3f61dfe8-6a7c-4cfe-aa6a-2e714c27acd3" />
+        <generalsInternal>
+          <generalization Id="beb80a80-a8ce-499b-907e-136e67399ad9" isSubstitutable="false">
+            <useCaseMoniker Id="54a4307e-fc8c-498e-a4da-5c63106d2322" LastKnownName="Listar usuarios" />
+            <elementDefinition Id="53c17fad-063a-44b2-afac-eb7985a3dc7c" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5a071f7d-33d7-400e-b08d-0686e1ae7694" name="Validarse en el sistema" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="552a5b32-d81b-447c-a37b-3fbca8e43764" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8e4e97ff-23ab-4874-82a7-16cc2e6b3b8b" name="Notificar alumno" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="71e3f36a-299b-4f96-98a7-100b4873e739" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9fc971eb-6dea-4250-b084-e4cc26a805bb" name="Desmatricular a un alumno" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d4036c9b-2935-4f4b-96a1-f3d42e3a3ec9" />
+        <extendedCases>
+          <extend Id="90065bb2-d89e-455f-93f8-95fcc45a47b3">
+            <useCaseMoniker Id="6b603c77-92de-445f-b3cf-b3c78534f292" LastKnownName="Asignar falta de asistencia" />
+            <elementDefinition Id="341b9d06-7396-4f56-aca4-31a779b8f580" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include Id="646cb43f-f0a4-43ce-8f76-c452c3755ee0">
+            <useCaseMoniker Id="8e4e97ff-23ab-4874-82a7-16cc2e6b3b8b" LastKnownName="Notificar alumno" />
+            <elementDefinition Id="88ff9faa-1423-4179-a655-1cd046d74d99" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6fd60f88-2ae3-4e0d-9628-efddbe01c281" name="Buscar alumno" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="31d0d49b-b891-4930-9de0-7310a99616eb" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5b9dab13-ccf9-4755-98ba-b3398e6a6465" name="Borrar falta de asistencia" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="24fe9c4c-e586-478a-8332-9de79452f2d9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6b603c77-92de-445f-b3cf-b3c78534f292" name="Asignar falta de asistencia" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1576d173-6504-4415-835a-6474424004a0" />
+        <additions>
+          <include Id="f00c4495-5eec-4cde-8cc6-ff1a0c369852">
+            <useCaseMoniker Id="6fd60f88-2ae3-4e0d-9628-efddbe01c281" LastKnownName="Buscar alumno" />
+            <elementDefinition Id="69ddfd69-e93f-4801-8589-d938b6131cb9" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0c014797-9681-4211-8933-4c79ca11d932" name="Borrar falta de asistencia" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="25344658-83aa-4ea9-a464-14440af951ac" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="0e31d9fb-2ff5-4001-abac-54264f9a1066" name="Lab2-DiagramaCasosUso">
+    <elementDefinition Id="cf18c5cf-a608-4fe6-830e-2b84b315387a" />
+  </package>
+</useCaseModelRoot>

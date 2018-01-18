@@ -1,0 +1,130 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ProyectoSoftwareApp", "ProyectoSoftwareApp\ProyectoSoftwareApp.modelproj", "{7743320D-E368-43B1-BBD4-F2CDDDA22C4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{99C6159B-8E80-449E-A4CD-DF9DD5067C53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{00E07A36-F579-4382-8870-F5B6FC065DBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{9B7AAB72-FC72-43DC-B489-769FB7A617B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab2", "Lab2", "{3433025C-39BE-412C-80E8-1BB5898B842C}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Lab2-DiagramaCasosUso", "Lab2-DiagramaCasosUso\Lab2-DiagramaCasosUso.modelproj", "{5E056BC2-70E5-4156-A643-D752D2622BFE}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Lab2-DiagramaClases", "Lab2-DiagramaClases\Lab2-DiagramaClases.modelproj", "{87B8C41C-98A5-4053-8B25-9744EE20E745}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestDepModelLib", "..\GestDepModelLib\GestDepModelLib.csproj", "{A544FBAB-2808-4C32-867F-3274AE90BCE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestDepLib", "GestDepLib\GestDepLib.csproj", "{A83B3F81-B1D8-42DA-8F43-241D115DBC49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestDepDBTest", "..\GestDBTest\GestDepDBTest.csproj", "{4646CB99-241C-4CAD-844E-7697DE97E0AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab1", "Lab1", "{425EDFC9-5D8E-4649-827B-95D6BFA2E0AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldApp", "HelloWorldApp\HelloWorldApp.csproj", "{3D464A1B-5263-48FC-8573-6B52F241DC22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogicTest", "BusinessLogicTest", "{09AB64BA-F39A-4147-90F5-E31B6287EB11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicTestApp", "..\BusinessLogicTestApp\BusinessLogicTestApp.csproj", "{9475841E-D1CE-4CB9-BE50-1B184E237DB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestDep.GUI", "GestDep.GUI\GestDep.GUI.csproj", "{015D14A6-272E-45FA-9618-30AB2CE991D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7743320D-E368-43B1-BBD4-F2CDDDA22C4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7743320D-E368-43B1-BBD4-F2CDDDA22C4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7743320D-E368-43B1-BBD4-F2CDDDA22C4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7743320D-E368-43B1-BBD4-F2CDDDA22C4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E056BC2-70E5-4156-A643-D752D2622BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E056BC2-70E5-4156-A643-D752D2622BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E056BC2-70E5-4156-A643-D752D2622BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E056BC2-70E5-4156-A643-D752D2622BFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87B8C41C-98A5-4053-8B25-9744EE20E745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87B8C41C-98A5-4053-8B25-9744EE20E745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87B8C41C-98A5-4053-8B25-9744EE20E745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87B8C41C-98A5-4053-8B25-9744EE20E745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A544FBAB-2808-4C32-867F-3274AE90BCE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A544FBAB-2808-4C32-867F-3274AE90BCE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A544FBAB-2808-4C32-867F-3274AE90BCE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A544FBAB-2808-4C32-867F-3274AE90BCE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A83B3F81-B1D8-42DA-8F43-241D115DBC49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A83B3F81-B1D8-42DA-8F43-241D115DBC49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A83B3F81-B1D8-42DA-8F43-241D115DBC49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A83B3F81-B1D8-42DA-8F43-241D115DBC49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4646CB99-241C-4CAD-844E-7697DE97E0AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4646CB99-241C-4CAD-844E-7697DE97E0AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4646CB99-241C-4CAD-844E-7697DE97E0AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4646CB99-241C-4CAD-844E-7697DE97E0AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D464A1B-5263-48FC-8573-6B52F241DC22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D464A1B-5263-48FC-8573-6B52F241DC22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D464A1B-5263-48FC-8573-6B52F241DC22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D464A1B-5263-48FC-8573-6B52F241DC22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9475841E-D1CE-4CB9-BE50-1B184E237DB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9475841E-D1CE-4CB9-BE50-1B184E237DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9475841E-D1CE-4CB9-BE50-1B184E237DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9475841E-D1CE-4CB9-BE50-1B184E237DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{015D14A6-272E-45FA-9618-30AB2CE991D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{015D14A6-272E-45FA-9618-30AB2CE991D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{015D14A6-272E-45FA-9618-30AB2CE991D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{015D14A6-272E-45FA-9618-30AB2CE991D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3433025C-39BE-412C-80E8-1BB5898B842C} = {9B7AAB72-FC72-43DC-B489-769FB7A617B2}
+		{5E056BC2-70E5-4156-A643-D752D2622BFE} = {3433025C-39BE-412C-80E8-1BB5898B842C}
+		{87B8C41C-98A5-4053-8B25-9744EE20E745} = {3433025C-39BE-412C-80E8-1BB5898B842C}
+		{A83B3F81-B1D8-42DA-8F43-241D115DBC49} = {00E07A36-F579-4382-8870-F5B6FC065DBB}
+		{425EDFC9-5D8E-4649-827B-95D6BFA2E0AA} = {9B7AAB72-FC72-43DC-B489-769FB7A617B2}
+		{3D464A1B-5263-48FC-8573-6B52F241DC22} = {425EDFC9-5D8E-4649-827B-95D6BFA2E0AA}
+		{09AB64BA-F39A-4147-90F5-E31B6287EB11} = {9B7AAB72-FC72-43DC-B489-769FB7A617B2}
+		{9475841E-D1CE-4CB9-BE50-1B184E237DB3} = {09AB64BA-F39A-4147-90F5-E31B6287EB11}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://2017-isw-3b1-cmjj.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ProyectoSoftwareApp\\ProyectoSoftwareApp.modelproj
+		SccProjectName1 = ProyectoSoftwareApp
+		SccLocalPath1 = ProyectoSoftwareApp
+		SccProjectUniqueName2 = Lab2-DiagramaCasosUso\\Lab2-DiagramaCasosUso.modelproj
+		SccProjectTopLevelParentUniqueName2 = ProyectoSoftwareApp.sln
+		SccProjectName2 = Lab2-DiagramaCasosUso
+		SccLocalPath2 = Lab2-DiagramaCasosUso
+		SccProjectUniqueName3 = Lab2-DiagramaClases\\Lab2-DiagramaClases.modelproj
+		SccProjectTopLevelParentUniqueName3 = ProyectoSoftwareApp.sln
+		SccProjectName3 = Lab2-DiagramaClases
+		SccLocalPath3 = Lab2-DiagramaClases
+		SccProjectUniqueName4 = ..\\GestDepModelLib\\GestDepModelLib.csproj
+		SccProjectName4 = ../GestDepModelLib
+		SccLocalPath4 = ..\\GestDepModelLib
+		SccProjectUniqueName5 = GestDepLib\\GestDepLib.csproj
+		SccProjectTopLevelParentUniqueName5 = ProyectoSoftwareApp.sln
+		SccProjectName5 = GestDepLib
+		SccLocalPath5 = GestDepLib
+		SccProjectUniqueName6 = ..\\GestDBTest\\GestDepDBTest.csproj
+		SccProjectName6 = ../GestDBTest
+		SccLocalPath6 = ..\\GestDBTest
+		SccProjectUniqueName7 = HelloWorldApp\\HelloWorldApp.csproj
+		SccProjectTopLevelParentUniqueName7 = ProyectoSoftwareApp.sln
+		SccProjectName7 = HelloWorldApp
+		SccLocalPath7 = HelloWorldApp
+		SccProjectUniqueName8 = ..\\BusinessLogicTestApp\\BusinessLogicTestApp.csproj
+		SccProjectTopLevelParentUniqueName8 = ProyectoSoftwareApp.sln
+		SccProjectName8 = ../BusinessLogicTestApp
+		SccLocalPath8 = ..\\BusinessLogicTestApp
+		SccProjectUniqueName9 = GestDep.GUI\\GestDep.GUI.csproj
+		SccProjectName9 = GestDep.GUI
+		SccLocalPath9 = GestDep.GUI
+	EndGlobalSection
+EndGlobal

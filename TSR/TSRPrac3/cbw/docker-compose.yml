@@ -1,0 +1,96 @@
+version: '2'
+services:
+  worA:
+    image: wk
+    build: ./worker/
+    links:
+      - bro
+      - log
+    environment:
+      - BROKER_URL=tcp://bro:8059
+      - LOGGER_URL=tcp://log:8060
+      - CLASSID=A
+  worB:
+    image: wk
+    build: ./worker/
+    links:
+      - bro
+      - log
+    environment:
+      - BROKER_URL=tcp://bro:8059
+      - LOGGER_URL=tcp://log:8066
+      - CLASSID=B
+  worC:
+    image: wk
+    build: ./worker/
+    links:
+      - bro
+      - log
+    environment:
+      - BROKER_URL=tcp://bro:8059
+      - LOGGER_URL=tcp://log:8066
+      - CLASSID=C
+  worD:
+    image: wk
+    build: ./worker/
+    links:
+      - bro
+      - log
+    environment:
+      - BROKER_URL=tcp://bro:8059
+      - LOGGER_URL=tcp://log:8066
+      - CLASSID=D
+
+  cliA:
+    image: cl
+    build: ./client/
+    links:
+      - bro
+      - log
+    environment:
+      - BROKER_URL=tcp://bro:8060
+      - LOGGER_URL=tcp://log:8066
+      - CLASSID=A
+  cliB:
+    image: cl
+    build: ./client/
+    links:
+      - bro
+      - log
+    environment:
+      - BROKER_URL=tcp://bro:8060
+      - LOGGER_URL=tcp://log:8066
+      - CLASSID=B
+  cliC:
+    image: cl
+    build: ./client/
+    links:
+      - bro
+      - log
+    environment:
+      - BROKER_URL=tcp://bro:8060
+      - LOGGER_URL=tcp://log:8066
+      - CLASSID=C
+  cliD:
+    image: cl
+    build: ./client/
+    links:
+      - bro
+      - log
+    environment:
+      - BROKER_URL=tcp://bro:8060
+      - LOGGER_URL=tcp://log:8066
+      - CLASSID=D
+  bro:
+    image: broker
+    build: ./broker/
+    links:
+      - log
+    environment:
+      - LOGGER_URL=tcp://log:8066
+  log:
+    image: logger
+    build: ./logger/
+    volumes:
+      - /tmp/logger.log:/tmp/cbwlog.txt
+    

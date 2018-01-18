@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{015D14A6-272E-45FA-9618-30AB2CE991D6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GestDep.GUI</RootNamespace>
+    <AssemblyName>GestDep.GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnadirCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnadirCurso.Designer.cs">
+      <DependentUpon>AnadirCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnadirUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnadirUsuario.Designer.cs">
+      <DependentUpon>AnadirUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsignarMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignarMonitor.Designer.cs">
+      <DependentUpon>AsignarMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestDepApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestDepApp.Designer.cs">
+      <DependentUpon>GestDepApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListarCallesLibres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarCallesLibres.Designer.cs">
+      <DependentUpon>ListarCallesLibres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatricularUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatricularUsuario.Designer.cs">
+      <DependentUpon>MatricularUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnadirCurso.resx">
+      <DependentUpon>AnadirCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnadirUsuario.resx">
+      <DependentUpon>AnadirUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignarMonitor.resx">
+      <DependentUpon>AsignarMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestDepApp.resx">
+      <DependentUpon>GestDepApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarCallesLibres.resx">
+      <DependentUpon>ListarCallesLibres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="matricularUsuario.resx">
+      <DependentUpon>MatricularUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GestDepLib\GestDepLib.csproj">
+      <Project>{a83b3f81-b1d8-42da-8f43-241d115dbc49}</Project>
+      <Name>GestDepLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
