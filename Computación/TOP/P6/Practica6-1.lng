@@ -1,0 +1,69 @@
+SETS:
+!Definición de Sets Primitivos;
+Periodo /Ene, Feb, Mar, Abr, May, Jun/ ;
+Maquina /Cortadora, FresadoraV, FresadoraH, Taladro, Alisadora/ ;
+Producto /P1, P2, P3, P4, P5, P6, P7/: Beneficio;
+!Definición de Sets Derivados;
+Fabricacion (Periodo, Producto): UProducidas, UVendidas, UStock,
+MaxStock, CosteStock;
+CapMaquinas (Periodo, Maquina): HrsDispMaquina, MaquinasDisp,
+MaquinasMant;
+HrsProduccion (Maquina, Producto): HrsNecesarias;
+ENDSETS
+DATA:
+MaquinasDisp= 4 2 3 1 1
+4 2 3 1 1
+4 2 3 1 1
+4 2 3 1 1
+4 2 3 1 1
+4 2 3 1 1;
+MaquinasMant= 1 0 0 0 0
+0 0 2 0 0
+0 0 0 1 0
+0 1 0 0 0
+1 1 0 0 0
+0 0 1 0 1;
+Beneficio= 10 6 8 4 11 9 3;
+HrsNecesarias= 0.5 0.7 0 0 0.3 0.2 0.5
+0.1 0.2 0 0.3 0 0.6 0
+0.2 0 0.8 0 0 0 0.6
+0.05 0.03 0 0.07 0.1 0 0.08
+0 0 0.01 0 0.05 0 0.05;
+MaxStock= 100 100 100 100 100 100 100
+100 100 100 100 100 100 100
+100 100 100 100 100 100 100
+100 100 100 100 100 100 100
+100 100 100 100 100 100 100
+100 100 100 100 100 100 100;
+CosteStock= 0.5 0.5 0.5 0.5 0.5 0.5 0.5
+0.5 0.5 0.5 0.5 0.5 0.5 0.5
+0.5 0.5 0.5 0.5 0.5 0.5 0.5
+0.5 0.5 0.5 0.5 0.5 0.5 0.5
+0.5 0.5 0.5 0.5 0.5 0.5 0.5
+0.5 0.5 0.5 0.5 0.5 0.5 0.5;
+HrsDispMaquina= 384 384 384 384 384
+384 384 384 384 384
+384 384 384 384 384
+384 384 384 384 384
+384 384 384 384 384
+384 384 384 384 384;
+ENDDATA
+!Maximizar el beneficio total;
+[Beneficio_final] MAX= @SUM(Fabricacion(i,j): (Beneficio(j)*UVendidas(i,j)-
+CosteStock(i,j)*UStock(i,j)));
+!Restricciones de equilibrio:
+Uds. Vendidas mes t + Uds. Stock mes t = Uds. Producidas mes t + Uds. Stock mes (t-1);
+@for(Fabricacion (mes,prod):
+[Equilibrio] 
+UProducidas(mes,prod) +@IF(mes #EQ# 1,0,UStock(mes-1,prod)) = UVendidas(mes,prod)+UStock(mes,prod);
+);
+!Capacidad de producción y disponibilidad de Máquina;
+@FOR(CapMaquinas(mes, maq):
+[Produccion] @SUM(Producto(p):HrsNecesarias(maq,p)*UProducidas(mes,p)) <= HrsDispMaquina(mes, maq)*(MaquinasDisp(mes, maq)-MaquinasMant(mes,maq));
+);
+!Existencias en el mes de Junio;
+@for(Producto(p):
+[Existencia] UStock(6,p) >=50;);
+!Capacidad de almacenamiento;
+@for(Fabricacion(m,prod):
+[Capalmacenamiento] UStock(m,prod)<= MaxStock(m,prod););

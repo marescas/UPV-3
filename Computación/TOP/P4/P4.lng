@@ -1,0 +1,5 @@
+max=24*xa+20*xb;
+[montaje] 3/2*xa+1*xb<=24;
+[mecanizado] 1/2*xa+xb<=12;
+[maxA] @BND(0,xa,15);
+[maxB] @BND(0,xb,7/2);

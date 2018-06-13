@@ -1,0 +1,58 @@
+\documentclass[11pt,oneside,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\title{Memoria Práctica 2. Clasificación de textos}
+\author{Marcos Esteve Casademunt, Jose Gómez Gadea}
+\date{Junio 2018}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\listoffigures
+
+\section{Multinomial}
+Si aplicamos la distribución multinomial sobre los datos sin realizar suavizado obtenemos un error del 55,1 \%. Esto es debido al sobre-entrenamiento que se da cuando entrenamos por máxima verosimilitud.
+\section{Multinomial con suavizado}
+En la práctica se ha implementado un suavizado utilizando Laplace. Este suavizado consiste en sumarle una constante $\epsilon$ (muy pequeña) a cada parámetro y renormalizar. En nuestro experimento hemos variado esta constante en el rango $10^{-1}$, $10^{-20}$
+\begin{table}
+
+
+\begin{center}
+\begin{tabular}{|c c |}
+\hline
+$\epsilon$ & error \\
+\hline
+10e-1	 & 0.191 \\
+
+10e-2   & 0.211 \\
+
+10e-3 	 & 0.154 \\
+10e-3 	  & 0.076 \\
+10e-4 	 & 0.042 \\
+10e-5 	  & 0.022 \\
+
+10e-6 	  & 0.010 \\
+
+10e-7 	 & 0.006 \\
+
+10e-8 	& 0.005 \\
+
+10e-9 	  & 0.005 \\
+
+10e-10 	 & 0.004 \\
+\hline
+\end{tabular}
+
+\end{center}
+\caption{Evolución del error al disminuir $\epsilon$ en el suavizado de LaPlace}
+\end{table}
+Como podemos observar, la tasa de error disminuye al disminuir $\epsilon$. Pasando de un error de un 55,1\% al no aplicar suavizado a un 7,6\% al utilizar un $\epsilon$ de 0.0001. Estos resultados se aprecian mejor en la tabla inferior.
+\begin{figure}
+\includegraphics[scale=0.7]{printimage2.png}
+\caption{Evolución del error al variar el parámetro $\epsilon$ en el suavizado de Laplace }
+\end{figure}
+
+\end{document}

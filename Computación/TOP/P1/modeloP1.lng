@@ -1,0 +1,21 @@
+A = CAS + CAN +CAE;
+B = CBS + CBN + CBE;
+C = CCS +CCN + CCE;
+MAX= CAE + CBE + CCE;
+[Precio] 650*(CAS+CAN+CAE) + 500*(CBS+CBN+CBE) + 450*(CCS+CCN+CCE) <= 50000000;
+[DispB] CBS +CBN+CBE <=3000;
+[DispC] CCS+CCN+CCE <=7000;
+[AcuerdoA] CAS+CAN+CAE >=2500;
+[DemandaSuper] CAS +CBS+CCS >=2000;
+[DemandaNormal] CAN + CBN +CCN >= 2500;
+[Comp1Super] 0.8*CAS + 0.45*CBS +0.3*CCS >=0.6*(CAS + CBS + CCS);  
+[Comp2Super] 0.1*CAS + 0.3*CBS +0.4*CCS <= 0.25*(CAS + CBS + CCS);  
+[Comp3Super] 0.05*CAS + 0.2*CBS +0.25*CCS >= 0.1*(CAS + CBS + CCS); 
+[Comp1Normal] 0.8*CAN + 0.45*CBN +0.3*CCN >=0.5*(CAN + CBN + CCN); 
+[Comp2Normal] 0.1*CAN + 0.3*CBN +0.4*CCN <= 0.3*(CAN + CBN + CCN);
+[Comp3Normal] 0.05*CAN + 0.2*CBN +0.25*CCN <= 0.15*(CAN + CBN + CCN);
+[Comp1Euro] 0.8*CAE + 0.45*CBE +0.3*CCE <= 0.4*(CAE + CBE + CCE);  
+[Comp2Euro] 0.1*CAE + 0.3*CBE +0.4*CCE >= 0.35*(CAE + CBE + CCE);  
+[Comp3Euro] 0.05*CAE + 0.2*CBE +0.25*CCE >= 0.2*(CAE + CBE + CCE); 
+
+  
